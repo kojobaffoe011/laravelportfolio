@@ -1,0 +1,251 @@
+* {
+    font-family: "Inter", "serif";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 4rem;
+    /* text-align: center; */
+}
+
+h3,
+h5 {
+    margin: 0;
+    font-weight: 900;
+}
+
+a {
+    color: #2f855a;
+    color: #2f855a;
+}
+
+a:hover {
+    color: #091610;
+    /* text-decoration: none; */
+    /* border: 2px solid #276749; */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    border: 0.01rem solid #cbd5e0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 30%;
+}
+
+#headerul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#headerul li {
+    padding-right: 1rem;
+}
+#headerul1 {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+#headerul1 li {
+    padding-right: 1rem;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#home {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#home-left {
+    flex: 0.5;
+}
+
+#home-right {
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0;
+}
+
+#intro {
+    padding: 0 4%;
+}
+
+#text {
+    padding: 4% 5%;
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
+#hello {
+    color: #38a169;
+}
+#hello:hover {
+    color: #06361c;
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+#banner {
+    background-image: url("../assets/bg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.8;
+}
+
+#about {
+    background-image: url("../assets/bg3.jpg");
+    /* opacity: 0.6; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#email {
+    margin-top: 3rem;
+}
+#email :hover {
+    text-decoration: none;
+    color: #091610;
+}
+#or {
+    margin-top: 0.9rem;
+}
+#dm :hover {
+    text-decoration: none;
+    color: #091610;
+}
+
+#rgba {
+    display: flex;
+    flex: 1;
+    /* border: 1px solid tomato; */
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#rgbaleft {
+    /* border: 1px solid black; */
+    display: flex;
+    flex: 0.5;
+    flex-direction: column;
+    color: white;
+    padding: 0 3%;
+    text-align: left !important;
+    justify-content: center;
+}
+
+#rgbaright {
+    /* border: 1px solid black; */
+    display: flex;
+    flex: 0.5;
+    align-items: center;
+    padding-right: 5%;
+}
+
+#aboutul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#aboutul li {
+    margin: 3% 0;
+    /* padding: 3% 0; */
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.ul-id {
+    flex: 0.1;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: 1000;
+}
+
+.ul-paragraph {
+    flex: 0.9;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#contact {
+    background-image: url("../assets/bg5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.8;
+    background-color: #f4f6fa;
+    position: relative;
+    padding: 5% 0 0 0;
+    display: flex;
+    align-items: center;
+}
+#contact1 {
+    margin-right: 20rem;
+    font-size: 2rem;
+}
+#back {
+    margin-top: 0.7rem;
+}
+footer {
+    background-color: #2d3748;
+    width: 100%;
+    height: 20vh;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+@media only screen and (max-width: 1025px) {
+    #home,
+    #rgba {
+        flex-direction: column;
+    }
+    #rgbaright {
+        padding: 1% 0;
+    }
+    #rgbaleft {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    header {
+        padding: 1% 5%;
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+}
